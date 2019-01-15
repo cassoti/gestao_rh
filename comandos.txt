@@ -1,0 +1,29 @@
+########################################################################## Aula 1-6
+	
+	python -m venv "nome do amviente virtual"	#criar ambiente virtual, tudo que for instalado aqui nao vai para a pasta global
+	venv/Scripts/activate	#ira aparecer "(venv)" antes do path
+	pip install django	#so instala no ambiente virtual
+	PyCharm = File - Settings - Projetc Interpreter		# escolhe o python.exe da venv/Scripts
+	django-admin startproject "nome do projeto" .	#o ponto no final ele nao cria subpastas
+	python manage.py runserver
+
+
+	. venv/Scripts/activate ou entra na pasta Scripts e digita . activate #ativa o venv no terminal do git
+	deactivate #sai da venv
+	#sai o nome "(master)" do final e entra o "(venv)"
+	# master = git
+	# venv = python
+	
+########################################################################### Aula 7
+
+	python manage.py	#tem todos os comandos.
+	python manage.py startapp empresas		#cria um python package de nome empresas
+		#Open o settings.py dentro do python package gestao_rh e registra o o app 'apps.empresas',
+	python manage.py makemagrations 	#cria o model da empresas e o arquivo 0001_initial.py
+	python manage.py migrate
+	
+	
+
+	
+	
+	
