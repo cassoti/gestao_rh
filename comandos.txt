@@ -1,5 +1,6 @@
 ########################################################################## GIT
 
+
 git status		#verifica os aquivos que estao faltando no git
 git add "nome do arquivo"
 git commit -m "nome do snapshot"
@@ -8,6 +9,7 @@ git push origin master
 
 
 ########################################################################## AULA 1-6
+
 	
 	python -m venv "nome do amviente virtual"	#criar ambiente virtual, tudo que for instalado aqui nao vai para a pasta global
 	venv/Scripts/activate	#ira aparecer "(venv)" antes do path
@@ -25,7 +27,9 @@ git push origin master
 	
 	admin = Admin@123
 	
+	
 ########################################################################### AULA 7
+
 
 	python manage.py	#tem todos os comandos.
 	python manage.py startapp empresas		#cria um python package de nome empresas
@@ -36,6 +40,7 @@ git push origin master
 	
 
 ########################################################################### AULA 8
+
 	
 	models.py = from django.db import models
 				class Funcionario(models.Model):
@@ -46,11 +51,21 @@ git push origin master
 	admin.py = 	from django.contrib import admin
 				from .models import Funcionario
 				admin.site.register(Funcionario)
+				
 	
 ########################################################################### AULA 9
+
 
 	python manage.py startapp departamentos		#depois move para dentro da pasta apps dentro de gestao_rh
 		#gestao_rh - settings.py = add "apps.departamentos"
 		#departamentos - models.py = add "import django.db from models | class Departamentos(models.Model): | nome = models.CharField(max+lenght=70)"
+		
+		git status
+		git add "nomes em vermelho"
+		git commit -m "nome da alteracao"
+		git push
 	
-	
+
+########################################################################### AULA 10
+
+
